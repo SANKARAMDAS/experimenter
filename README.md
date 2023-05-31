@@ -141,7 +141,7 @@ Notes:
 
         brew install postgresql llvm openssl yarn
 
-        echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.bash_profile
+        echo 'export PATH="/usr/local/opt/llvm/bin:$PATH "' >> ~/.bash_profile
         export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 
     Ubuntu 20.04 instructions:
@@ -463,7 +463,7 @@ To use NoVNC, navgate to this url `http://localhost:7902` with the password `sec
 An example using PYTEST_ARGS to run one test.
 
 ```bash
-make integration_test_legacy PYTEST_ARGS="-k test_addon_rollout_experiment_e2e"
+make integration_test_legacy PYTEST_ARGS= "-k test_addon_rollout_experiment_e2e"
 ```
 
 Note: You need the following firefox version flag when running integration tests
